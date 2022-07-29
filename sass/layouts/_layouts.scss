@@ -23,17 +23,18 @@ header {
 
 
 .brand {
-    color: rgb(239, 238, 238);
-    background-image: url('/images/Sans\ titre\ \(1\).png');
+    color: rgb(0, 0, 0);
     background-position: 18%;
+    position: absolute;
+    bottom: -310px;
+    left: 400px;
     height: 100px;
-    width: 80%;
     border-radius: 50px;
     font-size: 4rem;
     margin: auto ;
     font-style: italic;
     font-weight: 300;
-    letter-spacing: 0.2cm;
+    letter-spacing: 0.1cm;
 }
 
 ul {
@@ -51,10 +52,30 @@ ul {
 .presentation {
     display: flex;
 flex-direction: column;
+margin: 100px;
     & img {
+        position: relative;
         height: 500px;
         width: 400px;
         object-fit: cover;
         border-radius: 20px;
+        margin-left: 20%;
+    }
+    &__sentence {
+        position: absolute;
+        line-height: 4rem;
+        left: 750px;
+        width: 500px;
+        font-size: 2.5rem;
+        font-weight: 600;
+        word-wrap: normal;
+    }
+    & button {
+        outline: none;
+        border: none;
+        padding: 40px;
+        margin: 100px auto;
+        width: 800px;
+        border-radius: 50px;
     }
 }
