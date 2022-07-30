@@ -9,8 +9,9 @@
 header {
     text-align: center;
     margin: 10px 20px;
+   
     & h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
         margin: 50px 0 20px 0;
     }
 }
@@ -26,8 +27,8 @@ header {
     color: rgb(0, 0, 0);
     background-position: 18%;
     position: absolute;
-    bottom: -310px;
-    left: 400px;
+    top: 420px;
+    left: 290px;
     height: 100px;
     border-radius: 50px;
     font-size: 4rem;
@@ -36,7 +37,7 @@ header {
     font-weight: 300;
     letter-spacing: 0.1cm;
     & em {
-        color: rgb(3, 1, 1);
+        color: rgb(42, 188, 255);
     }
 }
 
@@ -44,16 +45,28 @@ ul {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
-    margin: 50px;
+    margin: 100px 100px;
     & li {
-        font-size: 1.5rem;
+        font-size: 2rem;
+        padding: 30px 50px;
         font-weight: bold;
         margin: 15px;
+        transition: all .250s ease-in-out ;
+        &:hover {
+            font-style: italic;
+            cursor: pointer;
+            font-size: 2.3rem;
+            color: rgb(255, 255, 255);
+            border: 4px outset black;
+            border-radius: 10px;
+            background-color: rgb(118, 230, 253);
+        }
     }
 }
 
 .presentation {
     display: flex;
+    position: relative;
 flex-direction: column;
 margin: 100px;
     & img {
@@ -67,7 +80,7 @@ margin: 100px;
     &__sentence {
         position: absolute;
         line-height: 4rem;
-        left: 750px;
+        left: 650px;
         width: 500px;
         font-size: 2.5rem;
         font-weight: 600;
@@ -75,25 +88,7 @@ margin: 100px;
     }
     & a {
         text-decoration: none;
-        & button {
-            display: block;
-            position: relative;
-            outline: none;
-            border: none;
-            cursor: pointer;
-            background-color: rgb(97, 238, 165);
-            padding: 40px;
-            font-size: 2.5rem;
-            box-shadow: 6px 6px 5px 2px rgb(42, 120, 73);
-            margin: 100px auto;
-            width: 800px;
-            border-radius: 50px;
-            &:hover {
-                box-shadow: 3px 3px 0px 0px rgb(27, 75, 46);
-                top: 5px;
-            }
-            
-        }
+        
     }
     
 }
