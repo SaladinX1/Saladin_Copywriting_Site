@@ -12,7 +12,7 @@ header {
    
     & h1 {
         font-size: 3rem;
-        margin: 50px 0 20px 0;
+        margin: 50px 30px;
     }
 }
 
@@ -48,15 +48,21 @@ ul {
     margin: 40px 70px;
     & li {
         font-size: 2rem;
-        padding: 20px 50px;
+        padding: 15px 20px;
         font-weight: bold;
         margin: 15px;
         transition: all .250s ease-in-out ;
+        & a {
+            text-decoration: none;
+            color: black;
+            &:hover {
+                color: white;
+            }
+        }
         &:hover {
             font-weight: 900;
             cursor: pointer;
-            color: rgb(255, 255, 255);
-            border: 0 outset black;
+            border: 0 outset ;
             border-radius: 10px;
             background-color: rgb(118, 230, 253);
         }
