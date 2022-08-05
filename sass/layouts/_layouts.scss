@@ -75,7 +75,6 @@ ul {
 flex-direction: column;
 margin:  100px;
     & img {
-        position: relative;
         height: 500px;
         width: 400px;
         object-fit: cover;
@@ -94,6 +93,13 @@ margin:  100px;
     & a {
         text-decoration: none;
         
+    }
+    & .medal-icon {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        top:300px;
+        right: 220px;
     }
     
 }
@@ -131,6 +137,3 @@ margin:  100px;
         }
     }
 }
-
-
-
