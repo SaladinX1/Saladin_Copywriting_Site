@@ -39,6 +39,7 @@
 
 .engagement_text {
     @include artcle_format;
+    animation: opacity .800s ease-in .200s normal;
 }
 
 
