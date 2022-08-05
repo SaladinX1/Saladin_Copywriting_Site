@@ -1,5 +1,9 @@
+.engagement_bg {
+    background-color: black;
+    color: white;
+}
 .approche {
-    @include brand;
+    font-size: 2rem;
 }
 
 
@@ -8,4 +12,78 @@
     & li {
         font-size: 1.5rem;
     }
+    & .engagement_li {
+        & a {
+            color: white;
+        }   
+    }
 }
+
+.copy_icon {
+    font-size: 3rem;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 20px;
+    transition: background-color .250 ease-in-out;
+    & img {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        transform: scale(1);
+        transition: all .250s ease-in-out  ;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+} 
+
+.engagement_text {
+    @include artcle_format;
+}
+
+
+.trend-pic img {
+    margin: auto 50px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.button_engagement {
+& a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+    display: block;
+    position: relative;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    padding: 30px 10px;
+    font-size: 2rem;
+    font-family: 'Noto Serif Display' , Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    margin: 50px auto;
+    width: 800px;
+    border-radius: 50px;
+    transition: all .250s ease-in-out;
+    &:active {
+        background-color: rgb(104, 238, 97);
+        top: 10px;
+    }
+}
+
+.flower_money {
+    display: flex;
+    justify-content: center;
+    & img {
+        margin: 0 auto;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+    }
+} 
+
