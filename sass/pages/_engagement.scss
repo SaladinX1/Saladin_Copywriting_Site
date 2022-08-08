@@ -26,9 +26,9 @@
     padding: 20px;
     transition: background-color .250 ease-in-out;
     & img {
-        height: 80px;
-        width: 80px;
-        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        border-radius: 40%;
         transform: scale(1);
         transition: all .250s ease-in-out  ;
         &:hover {

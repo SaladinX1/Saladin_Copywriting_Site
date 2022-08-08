@@ -42,6 +42,16 @@ header {
     }
 }
 
+.logo_sc {
+
+   
+    margin: auto 0;
+    & img {
+        height: 150px;
+        width: 150px;
+    }
+}
+
 ul {
     display: flex;
     justify-content: space-around;
@@ -87,7 +97,7 @@ visibility: hidden;
     &__sentence {
         position: absolute;
         line-height: 4rem;
-        left: 650px;
+        left: 680px;
         width: 500px;
         font-size: 2.5rem;
         font-weight: 600;
@@ -108,8 +118,18 @@ visibility: hidden;
 }
 
 .bloc_un {
+    position: relative;
     visibility: hidden;
     animation: opacity .800s ease-in 1s forwards;
+    & .rocket {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        z-index: -1;
+        left: 70px;
+        top: 300px;
+        animation: translation 1s linear 0 infinite  normal;
+    } 
 }
 
 .question {
@@ -129,11 +149,19 @@ visibility: hidden;
 }
 
 .bloc_deux {
+    position: relative;
     visibility: hidden;
     animation: opacity .800s ease-in 1.5s forwards;
   & h2 {
     margin: 20px;
     text-align: center;
+}
+& .doc {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 20px;
+    right:350px;
 }
 }
 
@@ -145,5 +173,12 @@ visibility: hidden;
         & em {
             font-size: 3rem;
         }
+    }
+    & .bourse {
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        bottom: 130px;
+        right: 50px;
     }
 }
