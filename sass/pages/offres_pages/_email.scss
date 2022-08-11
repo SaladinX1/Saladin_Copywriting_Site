@@ -1,0 +1,42 @@
+
+.back_arrow {
+    margin: 20px 0 0 0;
+    display: flex;
+   & img {
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+        transform: scale(1);
+        transition: transform .250s ease-in-out;
+        &:hover {
+            transform: scale(1.15);
+        }
+    }
+}
+
+
+.brand__sc {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+    & img {
+        height: 50px;
+        width: 50px;
+    }
+    &--title {
+        @include brand;
+    }
+    &--image img {
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+}
+
+.email__promotion {
+    @include artcle_format;
+    &--text {
+        margin: 100px 20px 0 20px;
+    }
+}
