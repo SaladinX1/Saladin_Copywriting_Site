@@ -1,3 +1,8 @@
+body {
+    font-family: $primary-font;
+    font-weight: 300;
+}
+
 .engagement_bg {
     background-color: black;
     color: white;
@@ -50,41 +55,69 @@
     border-radius: 50%;
 }
 
-.button_engagement {
-& a {
+
+ a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
-}
-    display: block;
-    position: relative;
-    outline: none;
-    border: none;
-    cursor: pointer;
     color: rgb(255, 255, 255);
-    background-color: rgb(255, 255, 255);
-    padding: 30px 10px;
-    font-size: 2rem;
-    font-family: 'Noto Serif Display' , Helvetica, sans-serif;
-    font-style: italic;
-    font-weight: 600;
-    margin: 50px auto;
-    width: 800px;
-    border-radius: 50px;
-    transition: all .250s ease-in-out;
-    &:active {
-        background-color: rgb(104, 238, 97);
-        top: 10px;
-    }
+   & .button_engagement  {
+    
+   } 
 }
+   
+
 
 .flower_money {
     display: flex;
     justify-content: center;
     & img {
-        margin: 0 auto;
+        margin: 50px auto;
         width: 300px;
         height: 300px;
         border-radius: 50%;
     }
 } 
+
+
+.engagement_contact {
+    background-color: rgb(255, 255, 255);
+    height: 250px;
+    display: flex;
+    font-family: 'Oleo Script Swash Caps', Arial, Helvetica, sans-serif;
+    & ul {
+        flex-direction: column;
+        justify-content: flex-start;
+        li {
+            font-size: 1.4rem;
+            color: rgb(0, 0, 0);
+            & a {
+                &:hover {    
+                        color: rgb(0, 217, 255);
+                }
+            }
+            &:hover {
+                background-color: white;
+            }
+        }
+    }
+    & .socials {
+        margin-left: auto;
+        height: 250px;
+        display: flex;
+        align-items: flex-end;
+        
+        & img {
+            height: 50px;
+            width: 50px;
+            margin: 40px;
+            justify-content: center;
+            transform: scale(1);
+            transition: all .200s ease-in-out ;
+            cursor: pointer;
+            &:hover {
+                transform: scale(1.1);
+                border-radius: 10px;
+            }
+        }
+    }
+}
 
