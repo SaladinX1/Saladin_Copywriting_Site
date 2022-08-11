@@ -13,46 +13,50 @@
     margin-top: 100px;
     animation: opacity .800s linear forwards normal;
     visibility: hidden;
-    & .offer_box {
-        height: 500px;
-        width: 900px;
-        border: 5px solid rgb(0, 183, 255);
-        border-radius: 15px;
+    & a {
         margin: 60px;
-        position: relative;
-        cursor: pointer;
-        & img {
-            height: 490px;
-            filter: blur(5px);
+        & .offer_box {
+            height: 500px;
+            width: 900px;
+            border: 5px solid rgb(0, 183, 255);
+            border-radius: 15px;
+            position: relative;
+            & img {
+                height: 490px;
+                filter: blur(5px);
+                width: 891px;
+                object-fit: cover;
+                border-radius: 11px;
+                transition: filter .300s ease-in;
+                cursor: pointer;
+                &:hover {
+                    filter: blur(0px);  
+                }
+            }    
+          &--text {
+            position: absolute;
+            visibility: hidden;
+            bottom: 15px;
+            font-size: 2.3rem;
+            font-weight: 400;
             width: 891px;
-            object-fit: cover;
-            border-radius: 11px;
-            transition: filter .300s ease-in;
-            &:hover {
-                filter: blur(0px);  
-            }
-        }    
-      &--text {
-        position: absolute;
-        visibility: hidden;
-        bottom: 15px;
-        font-size: 2.3rem;
-        font-weight: 400;
-        width: 891px;
-        height: 130px;
-        transform: translateY(140px);
-    background-color: rgb(255, 255, 255);
-    font-family: 'Old Standard TT', Helvetica, sans-serif;
-    font-style: italic;
-    font-weight: 800;
-    padding: 25px;
-    transition: transform .650s ease-out;
+            height: 130px;
+            transform: translateY(140px);
+        background-color: rgb(255, 255, 255);
+        color: black;
+        font-family: 'Oleo Script Swash Caps', Helvetica, sans-serif;
+        font-style: italic;
+        font-weight: 800;
+        padding: 25px;
+        transition: transform .650s ease-out;
+        }
+        &:hover > .offer_box--text {
+            transform: translateY(-10px);
+            visibility: visible;
+            opacity: .7;
+      }
+     }
     }
-    &:hover > .offer_box--text {
-        transform: translateY(-10px);
-        visibility: visible;
-        opacity: .7;
-  }
- }
+    
 }
 
