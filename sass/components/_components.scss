@@ -8,24 +8,24 @@
     cursor: pointer;
     color: rgb(255, 255, 255);
     background-color: rgb(97, 214, 238);
-    padding: 30px 10px;
+    padding: 30px 0;
     font-size: 2rem;
-    font-family: 'Noto Serif Display' , Helvetica, sans-serif;
+    font-family: 'Oleo Script Swash Caps' , Helvetica, sans-serif;
     font-style: italic;
     font-weight: 600;
     box-shadow: 6px 6px 5px 2px rgb(9, 9, 9);
     margin: 50px auto;
-    width: 800px;
+    width: 550px;
     border-radius: 50px;
     transition: all .250s ease-in-out;
     &:hover {
         box-shadow: 3px 3px 0px 0px rgb(0, 0, 0);
-        background-color: rgb(179, 238, 97);
+        background-color: rgb(197, 255, 38);
         color:  white;
         top: 5px;
     }
     &:active {
-        background-color: rgb(104, 238, 97);
+        background-color: rgb(255, 247, 0);
         box-shadow: 0px 0px 0px 0px rgb(0, 0, 0);
         top: 10px;
     }
