@@ -10,3 +10,15 @@
 .ux-titre {
     font-size: 2rem;
 }
+
+
+.ux_photo {
+    display: flex;
+    justify-content: center;
+    margin: 150px 0;
+    & img {
+        height: 500px;
+        width: 500px;
+        border-radius: 50%;
+    }
+}
