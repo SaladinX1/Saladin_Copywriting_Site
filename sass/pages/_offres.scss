@@ -10,21 +10,21 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-top: 100px;
+    margin: 100px 0;
     animation: opacity .800s linear forwards normal;
     visibility: hidden;
     & a {
-        margin: 60px;
+        margin: 40px;
         & .offer_box {
-            height: 500px;
-            width: 900px;
+            height: 300px;
+            width: 400px;
             border: 5px solid rgb(0, 183, 255);
             border-radius: 15px;
             position: relative;
             & img {
-                height: 490px;
+                height: 290px;
                 filter: blur(5px);
-                width: 891px;
+                width: 390px;
                 object-fit: cover;
                 border-radius: 11px;
                 transition: filter .300s ease-in;
@@ -37,9 +37,9 @@
             position: absolute;
             visibility: hidden;
             bottom: 15px;
-            font-size: 2.3rem;
+            font-size: 1.6rem;
             font-weight: 400;
-            width: 891px;
+            width: 390px;
             height: 130px;
             transform: translateY(140px);
         background-color: rgb(255, 255, 255);
@@ -60,3 +60,13 @@
     
 }
 
+.question-offre {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 50px;
+    text-align: center;
+}
+
+.bg_offer {
+    background-image: linear-gradient(80deg, rgb(255, 255, 255), rgb(254, 255, 254), rgb(255, 255, 255));
+}
