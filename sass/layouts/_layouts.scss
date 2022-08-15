@@ -3,7 +3,7 @@
  body {
     font-family: $primary-font;
     font-weight: 300;
-    background-image: linear-gradient(45deg, rgb(82, 220, 255),rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 247, 0)  );
+    background-image: linear-gradient(45deg, rgb(82, 220, 255),rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 247, 0)  );
 }
 
 header {
@@ -246,6 +246,45 @@ justify-content: center;
     animation: opacity .800s ease-in .200s normal;
 }
 
+.plan_title {
+    font-size: 2.5rem;
+    font-family: 'Oleo Script Swash Caps', Arial, Helvetica, sans-serif;
+}
+
+.dots_goals {
+    text-align: center;
+    margin: 100px 0;
+    & div {
+        display: flex;
+        margin: 70px 150px;
+        & div {
+            flex-direction: column;
+            border: 5px outset rgb(2, 225, 255);
+            border-radius: 50px;
+            padding: 10px 10px 50px 10px;
+        }
+        & h3 {
+            font-family: 'Oleo Script Swash Caps', Arial, Helvetica, sans-serif ;
+            font-size: 1.4rem;
+            margin: 30px;
+        }
+        & p {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        & img {
+            height: 150px;
+            width: 150px;
+        }
+    }
+   
+}
+
+.last-sentence {
+    font-size: 2.3rem;
+    //font-family: 'Oleo Script Swash Caps', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
 
 .flower_money {
     display: flex;
@@ -306,27 +345,3 @@ justify-content: center;
 }
 
 
-.dots_goals {
-    text-align: center;
-    margin: 100px 0;
-    & div {
-        display: flex;
-        margin: 50px 150px;
-        & div {
-            flex-direction: column;
-        }
-        & h3 {
-            font-size: 1.4rem;
-            margin: 30px;
-        }
-        & p {
-            font-size: 1rem;
-            font-weight: 600;
-        }
-        & img {
-            height: 150px;
-            width: 150px;
-        }
-    }
-   
-}
