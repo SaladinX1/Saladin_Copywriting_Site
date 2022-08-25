@@ -234,6 +234,16 @@ justify-content: center;
     }
 } 
 
+.copy_succes_img {
+    position: absolute;
+    left: 45px;
+  //  right: 200px;
+    z-index: -1;
+    filter: blur(5px);
+    padding: 50px;
+    
+}
+
 .transition__titles {
     text-align: center;
     font-size: 1.4rem;
@@ -245,6 +255,7 @@ justify-content: center;
 .engagement_text {
     @include artcle_format;
     animation: opacity .800s ease-in .200s normal;
+   
 }
 
 .plan_title {
@@ -266,11 +277,11 @@ justify-content: center;
         }
         & h3 {
             font-family: 'Oleo Script Swash Caps', Arial, Helvetica, sans-serif ;
-            font-size: 1.4rem;
+            font-size: 1.8rem;
             margin: 30px;
         }
         & p {
-            font-size: 1rem;
+            font-size: 1.4rem;
             font-weight: 600;
         }
         & img {
